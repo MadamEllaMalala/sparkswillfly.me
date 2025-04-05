@@ -528,7 +528,7 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	.header-nav-button {
 		text-indent: -999px;
 		position: absolute; top: 1em; right: 1em; z-index: 100;
-		width: 3em; height: 3em;
+		width: 4em; height: 4em;
 		border-radius: 50%;
 	}
 	.header-nav-item,
