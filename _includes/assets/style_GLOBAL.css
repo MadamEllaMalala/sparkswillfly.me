@@ -367,8 +367,6 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 
 /*** PAGES: ABOUT ***/
 	/*** .abt_highlight ***/
-	.abt_highlight-list-item:nth-child(1),
-	.abt_highlight-list-item:nth-child(3) { width: 19%; }
 	.abt_highlight-div-title { margin-top: 1em; }
 	.abt_highlight-list { padding: 0 1em; }
 	
@@ -536,7 +534,9 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 		display: block;
 	}
 	
-	/*** PAGE: ABOUT ==> .abt_gallery ***/
+	/*** PAGE: ABOUT ==> .abt_highlight ***/
+	.abt_highlight-list-item:nth-child(1),
+	.abt_highlight-list-item:nth-child(3) { width: 90%; margin: 0 auto; }
 	
 	/*** PAGE: CONTACT ==> .ctc_highlight ***/
 	.ctc_highlight-content {
@@ -675,6 +675,10 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	.header-nav-subitem-a {
 		display: block;
 	}
+	
+	/*** PAGE: ABOUT ==> .abt_highlight ***/
+	.abt_highlight-list-item:nth-child(1),
+	.abt_highlight-list-item:nth-child(3) { width: 19%; }
 	
 	/*** PAGE: CONTACT ==> .ctc_highlight ***/
 	.ctc_highlight-content-div { border-width: 0 .19em; }
