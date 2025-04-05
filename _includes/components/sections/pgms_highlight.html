@@ -1,0 +1,15 @@
+			<section class="pgms_highlight u-section"><div class="d-midWrap">
+				<h3 class="u-sectionTitle">STEM Education <span class="u-sectionTitle-span">through Robotics</span> <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				
+				<ul class="pgms_highlight-list">{% for file in site.data.pgms_highlight %}
+					<li class="pgms_highlight-list-item"><div class="pgms_highlight-div">{% for data in file %}
+						<img src="/assets/images/{% for content in data[1] %}{{ content.thumbnail }}{% endfor %}" class="pgms_highlight-div-img" />
+						<h5 class="pgms_highlight-div-title">{{ data[0] }}</h5>
+						<p class="pgms_highlight-div-text">{% for content in data[1] %}{{ content.text }}{% endfor %}</p>
+					{% endfor %}</div></li>{% endfor %}
+				</ul>{% if page.slug != "programs" %}
+				
+				<br />
+				<a href="/what-we-do/" class="u-cta">Explore What We Do</a>{% endif %}
+			</div></section>

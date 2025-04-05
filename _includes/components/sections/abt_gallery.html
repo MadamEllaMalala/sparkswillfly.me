@@ -1,0 +1,19 @@
+			<section class="abt_gallery u-section"><div class="d-midWrap">
+				<h3 class="u-sectionTitle">Explore the <span class="u-sectionTitle-span">Class Coachings</span>’ Gallery <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				
+				<input type="checkbox" id="chbx4gallery" name="chbx4gallery" />
+				<ul class="abt_gallery-list">{% for file in site.data.abt_gallery %}
+					<li class="abt_gallery-list-item"><div class="abt_gallery-div">{% for data in file %}
+						<label for="chbx4gallery" title="click to zoom"><img src="/assets/images/{{ data }}" class="abt_gallery-div-img" /></label>
+					{% endfor %}</div></li>{% endfor %}
+				</ul>
+				<div class="abt_gallery-sampleZoom"><div class="abt_gallery-sampleZoom_dock d-midWrap">
+					<label for="chbx4gallery" class="abt_gallery-sampleZoom-button u-cta">x</label>
+					
+					<figure class="abt_gallery-sampleZoom-figure"><img src="/assets/images/banner.webp" class="abt_gallery-sampleZoom-figure-img" /></figure>
+				</div></div>{% if page.slug != "about" %}
+				
+				<br />
+				<a href="/about-us/" class="u-cta">Discover ’Sparks Will Fly’</a>{% endif %}
+			</div></section>

@@ -1,0 +1,149 @@
+/*** CANCEL ***/
+html, body, main { width: 100%; height: 100%; }
+/*** END CANCEL ***/
+
+/*** COLORS ***/
+.facebook,
+.facebook * { color: white; }
+
+.facebook_dock { background-color: black; }
+/*** END COLORS ***/
+
+/*** FONTS ***/
+@font-face{
+	font-family:"Arial Black";src:url("../../assets/fonts/ariblk.ttf");/*src:url("../../assets/fonts/ALPHABETH.eot") format("embedded-opentype"),url("../../assets/fonts/ALPHABETH.woff2") format("woff2"),url("../../assets/fonts/ALPHABETH.woff") format("woff"),url("../../assets/fonts/ALPHABETH.ttf") format("trutype"),url("../../assets/fonts/ALPHABETH.svg") format("svg");*/}
+
+* {font-family:"Arial Black", sans-serif;}
+
+.community-header-hgroup-title { font-size: 1.9em; }
+ 
+.community { text-align: center; }
+.community-footer-copyrights a { text-decoration: underline; }
+/*** END FONTS ***/
+
+/*** MEDIA ***/	
+.js-login { filter: grayscale(100%); }
+/*** END MEDIA ***/
+
+/*** PAGES: COMMUNITY ***/
+	/*** COMMONS ***/
+	main { display: flex; }
+
+	/*** .community ***/
+	.community { display: flex; flex-direction: column; }
+	.community-content { flex: 1; }
+	
+	.community-footer {
+		padding: 1em;
+	}
+	.community-header-hgroup {
+		padding: 1.9em;
+	}
+	
+	/*** .facebook ***/
+	.facebook {
+		position: relative;
+		max-width: 100wv;
+	}
+		.facebook_dock {
+			position: relative;
+			width: 100%; height: 100%;
+			
+			padding: 1em;
+		}
+	.facebook-iframe {
+		width: 100%; height: 100%;
+	}
+/*** END PAGES: COMMUNITY ***/
+
+/*** INTERACTIVITY ***/
+/*** END INTERACTIVITY ***/
+
+/*** MEDIA QUERIES ***/
+@media screen and (max-width: 25em) {
+	/*** FONTS ***/
+	html, body, main { font-size: 14px; }
+}
+@media screen and (min-width: 25em) {
+	/*** FONTS ***/
+	html, body, main { font-size: 16px; }
+}
+@media screen and (max-width: 50em) {
+	/*** FONTS ***/
+	
+	/*** COMMONS ***/
+	.community { width: 100%; }
+	main { padding-right: 3em; }
+	
+	/*** PAGE: COMMUNITY ==> .facebook ***/
+	.facebook {
+		position: fixed; top: 0; right: 0;
+		width: 100%; height: 100%;
+	}
+	.facebook_dock {
+		overflow-x: scroll;
+	}
+	.facebook-iframe {
+//		min-width: 350px;
+		
+//		padding: .5em;
+	}
+	.facebook-button {
+		position: absolute; top: 0; left: 0; z-index: 100;
+			height: 100%;
+		display: block;
+	}
+	
+	/*** PAGE: COMMUNITY ==> .INTERACTIVITY ***/
+	.facebook iframe { display: none !important; }
+	#chkbx4facebook:checked ~ main  .facebook iframe { display: block !important; }
+
+	.facebook { width: 3em; }
+	#chkbx4facebook:checked ~ main .facebook { width: 100% !important; padding-left: 2em; }
+	
+	.facebook-button { width: 100%; }
+	#chkbx4facebook:checked ~ main .facebook-button { width: 2em !important; }
+	
+	.facebook-button { background-color: black; }
+	#chkbx4facebook:checked ~ main .facebook-button { background-color: white !important; }
+}
+@media screen and (min-width: 50em) {
+	/*** FONTS ***/
+	html, body, main { font-size: 18px; }
+	
+	/*** COMMONS ***/
+	.community { width: 70%; }
+	.facebook { width: 30%; }
+	
+	/*** PAGE: COMMUNITY ==> .facebook ***/
+	.facebook { animation: initial !important; }
+}
+/*** END MEDIA QUERIES ***/
+
+/*** DECORATION ***/
+	/*** .d-cssCentered ***/
+	.d-cssCentered {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	/*** .d-midWrap ***/
+	.d-midWrap {
+		max-width: 75em;
+		margin: auto;
+	}
+		.community {
+			max-width: 52.5em !important;
+//			max-width: 40.5em !important;
+		}
+/*** END DECORATION ***/
+
+/*** ANIMATION ***/
+	.facebook { animation: slide 1s alternate infinite; }
+	@keyframes slide { from { width: 3em; } to { width: 2em; } }
+/*** END ANIMATION ***/
+
+/*** CSS-HACKS ***/
+main { justify-content: center; }
+/*** END CSS-HACKS ***/

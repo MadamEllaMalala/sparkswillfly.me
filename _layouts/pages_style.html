@@ -1,0 +1,11 @@
+---
+---
+{% if page.url contains ".css" and page.url contains "GLOBAL" %}
+	{% include assets/reset.css %}
+	{% include assets/style_GLOBAL.css %}
+{% else %}
+	{% include assets/reset.css %}
+
+	{% assign vPageKey = page.url | split: "." | first | split: "_" | last %}	{% capture vPageFile %}assets/style_{{ vPageKey }}.css{% endcapture %}
+	{% include {{ vPageFile }} %}
+{% endif %}

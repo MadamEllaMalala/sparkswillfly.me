@@ -1,0 +1,20 @@
+			<section class="abt_highlight u-section"><div class="d-midWrap">
+				<h3 class="u-sectionTitle">Discover the <span class="u-sectionTitle-span">Origin Story</span> <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				
+				<ul class="abt_highlight-list">{% for file in site.data.abt_highlight %}
+					<li class="abt_highlight-list-item"><div class="abt_highlight-div">{% for data in file %}
+						<img src="/assets/images/banner.webp" class="abt_highlight-div-img" />
+						<h5 class="abt_highlight-div-title"><span class="abt_highlight-div-title-span">{{ data[0] }}</span><span class="abt_highlight-div-title-span">, {{ data[1] }}</span></h5>
+						<p class="abt_highlight-div-text">{% for content in data[1] %}{{ content.text }}{% endfor %}</p>
+					{% endfor %}</div></li>{% if forloop.first %}
+					<li class="abt_highlight-list-item"><div class="abt_highlight-origin">
+						<p class="abt_highlight-origin-p">In the midst of the lockdown, when the world was facing uncertainty, a father and his daughter found an unexpected source of inspiration. Seeking a meaningful way to spend their time together, he introduced his daughter to the world of robotics. What began as a simple activity quickly turned into an all-consuming passion. As they built, coded, and created, a spark ignited between them—one that would set the stage for something much bigger.</p>
+						<p class="abt_highlight-origin-p">That spark of robotics started ’Sparks Will Fly’, an academy dedicated to empowering the next generation of tech innovators.</p>
+					</div></li>
+					{% endif %}{% endfor %}
+				</ul>{% if page.slug != "about" %}
+				
+				<br />
+				<a href="/what-we-do/" class="u-cta">Discover ’Sparks Will Fly’</a>{% endif %}
+			</div></section>

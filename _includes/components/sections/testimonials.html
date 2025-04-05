@@ -1,0 +1,14 @@
+			<section class="testimonials u-section"><div class="d-midWrap">
+				<h3 class="u-sectionTitle">Our Client <span class="u-sectionTitle-span">Testimonials</span> <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				
+				<ul class="testimonials-list">{% for file in site.data.testimonials %}
+					<li class="testimonials-list-item"><blockquote class="testimonials-blockquote">{% for data in file %}
+						<q class="testimonials-blockquote-q">{{ data[1] }}</q>
+						<cite class="testimonials-blockquote-cite">
+							<h5 class="testimonials-blockquote-cite-name"><span class="testimonials-blockquote-cite-name-span">{{ data[0] | split: "," | first }}</span> <span class="testimonials-blockquote-cite-name-span">: {{ data[0] | split: "," | last }}</span></h5>
+							<span class="testimonials-blockquote-cite-stars">5 stars</span>
+						</cite>
+					{% endfor %}</blockquote></li>{% endfor %}
+				</ul>
+			</div></section>

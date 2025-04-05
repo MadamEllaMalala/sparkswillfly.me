@@ -1,0 +1,11 @@
+			<section class="pgms_skills u-section"><div class="d-midWrap">
+				<h3 class="u-sectionTitle">Lego Robots to build <span class="u-sectionTitle-span">engineering skills</span> <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				
+				<ul class="pgms_skills-list">{% for file in site.data.pgms_skills %}
+					<li class="pgms_skills-list-item"><div class="pgms_skills-div">{% for data in file %}
+						<img src="/assets/images/{{ data[0] }}" class="pgms_skills-div-img" />
+						<span class="pgms_skills-div-text">{% if data[1] contains ":" %}<span class="d-underline">{{ data[1] | split: ":" | first }}:</span><br />{{ data[1] | split: ":" | last }}{% else %}{{ data[1] }}{% endif %}</span>
+					{% endfor %}</div></li>{% endfor %}
+				</ul>
+			</div></section>

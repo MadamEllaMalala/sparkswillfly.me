@@ -1,0 +1,16 @@
+			<section class="olp_highlight u-section"><div class="d-midWrap">
+				<h3 class="u-sectionTitle">Competitive Skills for the <span class="u-sectionTitle-span">Robot Olympiad</span> <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				
+				<ul class="olp_highlight-list">{% for file in site.data.olp_highlight %}
+					<li class="olp_highlight-list-item"><div class="olp_highlight-div">{% for data in file %}
+						<video class="olp_highlight-div-video" controls preload="none" loading="lazy">
+							<source src="/assets/videos/sample.mp4" type="video/mp4" />
+						</video>
+						<h5 class="olp_highlight-div-title">{{ data[1] }}</h5>
+					{% endfor %}</div></li>{% endfor %}
+				</ul>{% if page.slug != "olympiad" %}
+				
+				<br />
+				<a href="/robot-olympiad/" class="u-cta">Join The Competition</a>{% endif %}
+			</div></section>

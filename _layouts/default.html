@@ -1,0 +1,16 @@
+---
+---
+<!DOCTYPE html>
+<html attr-page="{{ page.name | split: '.' | first }}" class="pg-{{ page.name | split: '.' | first }}">
+	<head>
+		{% include components/meta-tags.html %}
+		<link rel="stylesheet" href="/assets/stylesheets/sparkswillfly-dot-corporomalala-dot-com_GLOBAL.css" />
+	</head>
+	<body>
+		{{ content }}
+		
+		{% include assets/script.dependencies.js %}
+		<script src="https://ib-cdn.netlify.app/global.js"></script>
+		<script src="/assets/scripts/sparkswillfly-dot-corporomalala-dot-com_{{ page.slug }}.js"></script>
+	</body>
+</html>
