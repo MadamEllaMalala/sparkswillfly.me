@@ -3,6 +3,7 @@
 /*** END Z-INDEXES ***/
 
 /*** COLORS ***/
+.m-logo-title { background-color: #FED434; }
 .header-nav,
 .abt_highlight-list-item:nth-child(1) .abt_highlight-div,
 .abt_highlight-list-item:nth-child(3) .abt_highlight-div,
@@ -11,14 +12,13 @@
 .olp_highlight-div,
 .pgms_highlight-list-item:nth-child(2) .pgms_highlight-div,
 .pgms_skills-list-item:nth-child(6) .pgms_skills-div,
-.pgms_skills-list-item:nth-child(7) .pgms_skills-div,
-.m-logo-title { background-color: #FED434; } /*** orange ***/
-main { border-color: #FED434; }
+.pgms_skills-list-item:nth-child(7) .pgms_skills-div { background-color: orange; } /*** orange FED434 ***/
+main { border-color: orange; }
 .banner-title,
 .ctc_highlight-content-div-span,
 .olp_blog-div-title,
 .testimonials-blockquote-cite-name-span:nth-child(1),
-.u-sectionTitle { color: #FED434; }
+.u-sectionTitle { color: orange; }
 
 .m-logo-subtitle { background-color: #D93325; } /*** red ***/
 .banner-title-span,
@@ -49,6 +49,7 @@ main { border-color: #FED434; }
 .m-logo-subtitle,
 .m-logo-title,
 .u-cta { color: white; }
+.ctc_newsletter .u-sectionText { color: white !important; }
 
 .abt_gallery,
 .ctc_registration,
@@ -96,6 +97,7 @@ main { border-color: #FED434; }
 
 p,
 q,
+.ctc_newsletter .u-sectionText,
 .pgms_skills-div-text,
 .u-cta { line-height: 1.25em; letter-spacing: .025em; }
 
