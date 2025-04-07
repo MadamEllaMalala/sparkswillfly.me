@@ -100,7 +100,7 @@ p,
 q,
 .ctc_newsletter .u-sectionText,
 .pgms_skills-div-text,
-.u-cta { letter-spacing: .025em; }
+.u-cta { line-height: 1.25em; letter-spacing: .025em; }
 
 .banner-text,
 .ctc_highlight-content-div-span,
@@ -599,13 +599,6 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	.banner-title { font-size: 5em; }
 	.ctc_newsletter-title,
 	.u-sectionTitle { font-size: 2.5em; }
-	
-	p,
-	q,
-	.ctc_newsletter .u-sectionText,
-	.pgms_skills-div-text,
-	.u-cta { line-height: 1.25em; }
-		.u-sectionText {// line-height: 1em !important; }
 	
 	/*** UTILITIES & MIXINS ***/
 	.m-logo { font-size: 1.5em; }
