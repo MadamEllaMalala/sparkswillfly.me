@@ -1,11 +1,10 @@
 - "Beginner Robotics: Build and Code Your First Robot":
   - date: "Buy for <span class='d-font'>$</span>300 only<span class='d-font'>!</span>"
   - thumbnail: "banner.webp"
-  - summary: "A beginner-friendly course using LEGO Mindstorms. Explore motors, sensors and simple coding challenges. Learn to build a simple robot and program basic movements."
+  - summary: "A beginner<span class='d-font'>-</span>friendly course using LEGO Mindstorms. Explore motors, sensors and simple coding challenges. Learn to build a simple robot and program basic movements."
 - "Advanced LEGO Robotics: Obstacle Course and Challenges":
   - date: "Buy for <span class='d-font'>$</span>300 only<span class='d-font'>!</span>"
   - thumbnail: "banner.webp"
-  - summary: "Take your builds to the next level with advanced programming. Learn about loops, sensors, and problem-solving techniques. Create a robot that navigates mazes, avoids obstacles, and completes tasks."
 - "Battle Bots: Design, Build and Compete":
   - date: "Buy for <span class='d-font'>$</span>300 only<span class='d-font'>!</span>"
   - thumbnail: "banner.webp"
