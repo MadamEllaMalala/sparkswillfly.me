@@ -100,13 +100,8 @@ p,
 q,
 .ctc_newsletter .u-sectionText,
 .pgms_skills-div-text,
-.u-cta { line-height: 1.25em; letter-spacing: .025em; }
+.u-cta { letter-spacing: .025em; font-size: 21px !important;// line-height: 1.25em; }
 
-.banner-text,
-.ctc_highlight-content-div-span,
-.ctc_registration-form-title,
-.olp_highlight-div-title,
-.pgms_highlight-div-title { font-size: 1.5em; }
 .abt_highlight-div-title,
 .abt_highlight-origin-p,
 .olp_blog-div-title { font-size: 1.25em; }
@@ -198,6 +193,7 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 		min-width: 10em; max-width: 75%;
 		display: inline-block;
 		padding: 1em 1.9em;
+//		padding: .75em 1.5em;
 		margin: 0 auto;
 		border-radius: 3em;
 	}
@@ -480,7 +476,6 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 @media screen and (min-width: 25em) {
 	/*** FONTS ***/
 	html, body, main { font-size: 16px; }
-	html, body, main { font-size: 18px; }
 }
 @media screen and (max-width: 50em) {
 	/*** COLORS ***/
@@ -490,7 +485,12 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	/*** FONTS ***/
 	.banner-title { font-size: 3em; }
 	.ctc_newsletter-title,
-	.u-sectionTitle { font-size: 1.9em; }
+	.u-sectionTitle { font-size: 2.1em; }
+	.banner-text,
+	.ctc_highlight-content-div-span,
+	.ctc_registration-form-title,
+	.olp_highlight-div-title,
+	.pgms_highlight-div-title { font-size: 1.75em; }
 	
 	.header-nav { text-align: center; }
 	.header-aside-div { text-align: right; }
@@ -595,10 +595,15 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 @media screen and (min-width: 50em) {
 	/*** FONTS ***/
 	html, body, main { font-size: 18px; }
-	html, body, main { font-size: 21px; }
+	html, body, main {// font-size: 21px; }
 	.banner-title { font-size: 5em; }
 	.ctc_newsletter-title,
 	.u-sectionTitle { font-size: 2.5em; }
+	.banner-text,
+	.ctc_highlight-content-div-span,
+	.ctc_registration-form-title,
+	.olp_highlight-div-title,
+	.pgms_highlight-div-title { font-size: 1.5em; }
 	
 	/*** UTILITIES & MIXINS ***/
 	.m-logo { font-size: 1.5em; }
