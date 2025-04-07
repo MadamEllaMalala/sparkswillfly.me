@@ -100,7 +100,7 @@ p,
 q,
 .ctc_newsletter .u-sectionText,
 .pgms_skills-div-text,
-.u-cta { line-height: 1.25em; letter-spacing: .025em; }
+.u-cta { letter-spacing: .025em; }
 
 .banner-text,
 .ctc_highlight-content-div-span,
@@ -480,6 +480,7 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 @media screen and (min-width: 25em) {
 	/*** FONTS ***/
 	html, body, main { font-size: 16px; }
+	html, body, main { font-size: 18px; }
 }
 @media screen and (max-width: 50em) {
 	/*** COLORS ***/
@@ -594,9 +595,17 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 @media screen and (min-width: 50em) {
 	/*** FONTS ***/
 	html, body, main { font-size: 18px; }
+	html, body, main { font-size: 21px; }
 	.banner-title { font-size: 5em; }
 	.ctc_newsletter-title,
 	.u-sectionTitle { font-size: 2.5em; }
+	
+	p,
+	q,
+	.ctc_newsletter .u-sectionText,
+	.pgms_skills-div-text,
+	.u-cta { line-height: 1.25em; }
+		.u-sectionText {// line-height: 1em !important; }
 	
 	/*** UTILITIES & MIXINS ***/
 	.m-logo { font-size: 1.5em; }
