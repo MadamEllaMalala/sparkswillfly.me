@@ -114,7 +114,6 @@ q,
 .footer,
 .header-nav-item-a,
 .u-section { text-align: center; }
-.ctc_registration-form-fieldset-box-label,
 .olp_blog-div,
 .testimonials-blockquote { text-align: left; }
 .pgms_highlight-div-title,
@@ -276,15 +275,11 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 .ctc_registration-form {
 	margin-top: 1.9em;
 }
-/*
 .ctc_newsletter-form-input,
 .ctc_registration-form-input,
 .ctc_registration-form-select,
 .ctc_registration-form-textarea,
-.ctc_registration-form-title, */
-.u-input,
-.u-select,
-.u-textarea {
+.ctc_registration-form-title {
 	padding: 1em;
 	margin: 0 .5em;
 }
@@ -427,27 +422,10 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	.ctc_newsletter {}
 	
 	/*** .ctc_registration ***/
-	/*
-	.ctc_registration-form-span { align-items: flex-start !important; justify-content: flex-start !important; } */
+	.ctc_registration-form-span { align-items: flex-start !important; justify-content: flex-start !important; }
 	.ctc_registration-form {
 		padding: 1em;
 		margin: 0 1em;
-	}
-	.ctc_registration-form-fieldset {
-	}
-	.ctc_registration-form-fieldset-box {
-		padding: 0 .5em;
-	}
-	.ctc_registration-form-fieldset-box-label,
-	.ctc_registration-form-fieldset-box-input,
-	.ctc_registration-form-fieldset-box-select {
-		width: 100%;
-		display: block;
-		
-		margin: 0 !important;
-	}
-	.ctc_registration-form-fieldset-box-label {
-		padding: .5em 0;
 	}
 /*** END PAGES: CONTACT ***/
 
@@ -650,7 +628,8 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	.ctc_registration-form-fieldset { align-items: center; }
 	.ctc_highlight-content-div,
 	.ctc_newsletter-form-input,
-	.ctc_registration-form-fieldset-box { flex: 1; }
+	.ctc_registration-form-input,
+	.ctc_registration-form-textarea { flex: 1; }
 	
 	.header-nav { border-radius: 3em; overflow: hidden; }
 
