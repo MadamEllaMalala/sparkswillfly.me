@@ -1,0 +1,12 @@
+			<section class="pts_pricing u-section"><div class="d-midWrap">{% assign vProgram = page.title | split: '[' | last | remove: ']' | downcase | replace: ' ', '-' %}
+				<h3 class="u-sectionTitle">Straightforward <span class="u-sectionTitle-span">Program Pricing</span> <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">{{ page.details }}</p>
+				
+				<ul class="pgms_skills-list">{% for info in page.pricing %}
+					<li class="pgms_skills-list-item"><div class="pgms_skills-div">
+						<img src="/assets/images/{{ info[1] | split: '[' | last | remove: ']' }}" class="pgms_skills-div-img" />
+						<span class="pgms_skills-div-tex">{{ info[1] | split: '[' | first }}</span>
+						<span class="pgms_skills-div-text">{{ info[0] }}</span>
+					</div></li>{% endfor %}
+				</ul>
+			</div></section>

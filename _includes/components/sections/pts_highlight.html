@@ -1,0 +1,11 @@
+			<section class="pts_highlight u-section"><div class="d-midWrap">{% assign vProgram = page.title | split: '[' | last | remove: ']' | downcase | replace: ' ', '-' %}
+				<h3 class="u-sectionTitle">What We Do: <span class="u-sectionTitle-span">’{{ page.title | split: '[' | last | remove: ']' }}’</span> Program <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">{{ page.description }}</p>
+				
+				<ul class="pgms_skills-list">{% for info in page.skills %}
+					<li class="pgms_skills-list-item"><div class="pgms_skills-div">
+						<img src="/assets/images/{{ info[1] | split: '[' | last | remove: ']' }}" class="pgms_skills-div-img" />
+						<span class="pgms_skills-div-text">{% for i in (1..1) %}{{ info[1] | split: '[' | first }}{% endfor %}</span>
+					</div></li>{% endfor %}
+				</ul>
+			</div></section>
