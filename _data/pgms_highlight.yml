@@ -1,7 +1,7 @@
 - "One<span class='d-font'>-</span>on<span class='d-font'>-</span>One Tutoring":
     - thumbnail: "banner.webp"
     - text: "Personalized homeschooling sessions by experienced teachers, tailored to each student’s needs."
-    - link: "/what-we-do/homeschooling-tutoring/"
+    - link: "/what-we-do/class-coaching//"
 - "Class Coaching":
     - thumbnail: "banner.webp"
     - text: "Students work in teams with our experienced educators, in their everyday school environment."
@@ -9,4 +9,4 @@
 - "Private Workshops":
     - thumbnail: "banner.webp"
     - text: "Get experts craft the curriculum for upskilling your workforce, with an intensive and practical session."
-    - link: "/what-we-do/upskilling-workshops/"
+    - link: "/what-we-do/class-coaching/"
