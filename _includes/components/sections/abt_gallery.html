@@ -9,7 +9,7 @@
 				<input type="checkbox" id="chbx4gallery" name="chbx4gallery" />
 				<ul class="abt_gallery-list">{% for file in site.data.abt_gallery %}
 					<li class="abt_gallery-list-item"><div class="abt_gallery-div">{% for data in file %}
-						<label for="chbx4gallery" title="click to zoom"><img src="/assets/images/placeholder-4x3.png" style="background-image: url('/assets/images/gallery/{{ data }}');" class="abt_gallery-div-img" /></label>
+						<label for="chbx4gallery"><img src="/assets/images/placeholder-4x3.png" style="background-image: url('/assets/images/gallery/{{ data }}');" class="abt_gallery-div-img" /></label>
 					{% endfor %}</div></li>{% endfor %}
 				</ul>
 				<div class="abt_gallery-sampleZoom"><div class="abt_gallery-sampleZoom_dock d-midWrap">

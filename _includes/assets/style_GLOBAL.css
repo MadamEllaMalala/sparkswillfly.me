@@ -14,7 +14,8 @@
 .olp_highlight-div,
 .pgms_highlight-list-item:nth-child(2) .pgms_highlight-div,
 .pgms_skills .pgms_skills-list-item:nth-child(6) .pgms_skills-div,
-.pgms_skills .pgms_skills-list-item:nth-child(7) .pgms_skills-div { background-color: orange; } /*** orange FED434 ***/
+.pgms_skills .pgms_skills-list-item:nth-child(7) .pgms_skills-div,
+.pts_pricing .pgms_skills-list-item:nth-child(1) .pgms_skills-div { background-color: orange; } /*** orange FED434 ***/
 main { border-color: orange; }
 .ctc_highlight-content-div-span,
 .olp_blog-div-title,
@@ -47,6 +48,7 @@ main { border-color: orange; }
 .pgms_highlight-list-item:nth-child(2) .pgms_highlight-div-text,
 .pgms_skills .pgms_skills-list-item:nth-child(6) .pgms_skills-div-text,
 .pgms_skills .pgms_skills-list-item:nth-child(7) .pgms_skills-div-text,
+.pts_pricing .pgms_skills-list-item:nth-child(1) *,
 .olp_highlight-div-title,
 .u-button,
 .u-cta { color: white; }
@@ -105,6 +107,7 @@ q,
 .ctc_newsletter .u-sectionText,
 .ctc_registration-form-fieldset-box-label,
 .pgms_skills-div-text,
+.pts_pricing .pgms_skills-div *,
 .u-cta { letter-spacing: .025em; font-size: 21px !important;// line-height: 1.25em; }
 
 .abt_highlight-div-title,
@@ -843,6 +846,7 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 .banner-logo { display: none; }
 .m-logo {// display: none; }
 .pgms_highlight-div-button { display: none; }
+.abt_gallery-sampleZoom { display: none !important; }
 
 .abt_gallery-div-img {
 	background-size: cover !important;
