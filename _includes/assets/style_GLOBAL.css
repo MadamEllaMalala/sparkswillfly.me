@@ -564,11 +564,11 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	
 	/*** FONTS ***/
 	.banner-title { font-size: 3em; }
+	.ctc_highlight-content-div-span,
 	.ctc_newsletter-title,
 	.u-sectionTitle { font-size: 2.1em; }
 		.pts_pricing .pgms_skills-div-text { font-size: 2.1em !important; }
 	.banner-text,
-	.ctc_highlight-content-div-span,
 	.ctc_registration-form-title,
 	.olp_highlight-div-title,
 	.pgms_highlight-div-title { font-size: 1.75em; }
@@ -680,11 +680,11 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	html, body, main { font-size: 18px; }
 	html, body, main {// font-size: 21px; }
 	.banner-title { font-size: 5em; }
+	.ctc_highlight-content-div-span,
 	.ctc_newsletter-title,
 	.u-sectionTitle { font-size: 2.5em; }
 		.pts_pricing .pgms_skills-div-text { font-size: 2.5em !important; }
 	.banner-text,
-	.ctc_highlight-content-div-span,
 	.ctc_registration-form-title,
 	.olp_highlight-div-title,
 	.pgms_highlight-div-title { font-size: 1.5em; }
