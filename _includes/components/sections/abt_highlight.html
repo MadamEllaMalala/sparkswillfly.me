@@ -4,7 +4,7 @@
 				
 				<ul class="abt_highlight-list">{% for file in site.data.abt_highlight %}
 					<li class="abt_highlight-list-item"><div class="abt_highlight-div">{% for data in file %}
-						<img src="/assets/images/banner.webp" class="abt_highlight-div-img" />
+						<img src="/assets/images/portrait_{{ data[0] | downcase | replace: ' ', '-' }}.png" class="abt_highlight-div-img" />
 						<h5 class="abt_highlight-div-title"><span class="abt_highlight-div-title-span">{{ data[0] }}</span><span class="abt_highlight-div-title-span">, {{ data[1] }}</span></h5>
 						<p class="abt_highlight-div-text">{% for content in data[1] %}{{ content.text }}{% endfor %}</p>
 					{% endfor %}</div></li>{% if forloop.first %}

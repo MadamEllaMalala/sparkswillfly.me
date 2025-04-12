@@ -103,6 +103,7 @@ main { border-color: orange; }
 p,
 q,
 .ctc_newsletter .u-sectionText,
+.ctc_registration-form-fieldset-box-label,
 .pgms_skills-div-text,
 .u-cta { letter-spacing: .025em; font-size: 21px !important;// line-height: 1.25em; }
 
@@ -117,6 +118,9 @@ q,
 .ctc_newsletter,
 .footer,
 .header-nav-item-a,
+.olp_blog-div-text,
+.olp_blog-div-title,
+.u-button,
 .u-section { text-align: center; }
 .ctc_registration-form-fieldset-box-label,
 .olp_blog-div,
@@ -142,7 +146,7 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 /*** END FONTS ***/
 
 /*** MEDIA ***/
-.banner { background-image: url("/assets/images/banner.webp"); }
+.banner { background-image: url("/assets/images/banner.jpg"); }
 .banner {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -199,6 +203,10 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	/*** .u-button ***/
 	.pgms_highlight-div {
 		padding-bottom: 1.9em !important;
+	}
+	.olp_blog-div-figure {
+		position: relative;
+		margin-bottom: 1.9em;
 	}
 	.u-button {
 		position: absolute; bottom: -1em; left: 0; right: 0;
@@ -569,6 +577,7 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	.pgms_skills-list-item,
 	.abt_gallery-list-item { width: 50%; }
 		.pts_pricing .pgms_skills-list-item { width: 100%; }
+	.pgms_skills-list-item:nth-child(3) { clear: both; }
 	
 	.pgms_highlight-list-item,
 	.olp_highlight-list-item,
@@ -771,6 +780,9 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	.ctc_highlight-content-div:last-child { border-right: 0; }	
 	.ctc_highlight-content-div-p { padding: 1.9em 0; }
 	
+	/*** PAGE: CONTACT ==> .ctc_newsletter ***/
+	.ctc_newsletter_dock { max-width: 55em !important; }
+	
 	/*** PAGE: CONTACT ==> .ctc_registration ***/
 	.ctc_registration-form-fieldset {
 		margin: 1em 1.9em;
@@ -824,7 +836,17 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	}
 /*** END DECORATION ***/
 
+/*** CSS-HACKS ***/
+/*** END CSS-HACKS ***/
+
 /*** SANDBOX ***/
 .banner-logo { display: none; }
 .m-logo {// display: none; }
+.pgms_highlight-div-button { display: none; }
+
+.abt_gallery-div-img {
+	background-size: cover !important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 /*** END SANDBOX ***/

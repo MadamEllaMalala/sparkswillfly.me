@@ -1,11 +1,15 @@
 			<section class="abt_gallery u-section"><div class="d-midWrap">
+				<h3 class="u-sectionTitle">Explore the <span class="u-sectionTitle-span">latest news</span> in our gallery <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
+				<p class="u-sectionText">View the sessions of discovery, teamwork, and breakthrough. From first<span class='d-font'>-</span>time builders to rising experts, see the world of wonder where the innovators build and code robots.</p>
+				<!--
 				<h3 class="u-sectionTitle">Explore the <span class="u-sectionTitle-span">Class Coachings</span>’ Gallery <span class="u-sectionTitle-brand"><img src="/assets/images/logo.png" /></span></h3>
 				<p class="u-sectionText">View the sessions of discovery, teamwork, and breakthrough. From first<span class='d-font'>-</span>time builders to rising experts, see the world of wonder where our young innovators build and code robots.</p>
+				-->
 				
 				<input type="checkbox" id="chbx4gallery" name="chbx4gallery" />
 				<ul class="abt_gallery-list">{% for file in site.data.abt_gallery %}
 					<li class="abt_gallery-list-item"><div class="abt_gallery-div">{% for data in file %}
-						<label for="chbx4gallery" title="click to zoom"><img src="/assets/images/{{ data }}" class="abt_gallery-div-img" /></label>
+						<label for="chbx4gallery" title="click to zoom"><img src="/assets/images/placeholder-4x3.png" style="background-image: url('/assets/images/gallery/{{ data }}');" class="abt_gallery-div-img" /></label>
 					{% endfor %}</div></li>{% endfor %}
 				</ul>
 				<div class="abt_gallery-sampleZoom"><div class="abt_gallery-sampleZoom_dock d-midWrap">

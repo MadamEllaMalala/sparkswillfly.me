@@ -4,8 +4,14 @@
 				
 				<ul class="olp_blog-list">{% for file in site.data.olp_blog %}
 					<li class="olp_blog-list-item"><div class="olp_blog-div">{% for data in file %}
-						<img src="/assets/images/{% for content in data[1] %}{{ content.thumbnail }}{% endfor %}" class="olp_blog-div-img" />
-						<span class="olp_blog-div-date">{% for content in data[1] %}{{ content.date }}{% endfor %}</span>
+						<figure class="olp_blog-div-figure">
+							<img src="/assets/images/{% for content in data[1] %}{{ content.thumbnail }}{% endfor %}" class="olp_blog-div-img" />
+							<!--
+							<span class="olp_blog-div-date">{% for content in data[1] %}{{ content.date }}{% endfor %}</span>
+							<p class="olp_blog-div-text">{% for content in data[1] %}{{ content.summary }}{% endfor %}</p>
+							-->
+							<a href="{% for content in data[1] %}{{ content.link }}{% endfor %}" class="olp_blog-div-button u-button">{% for content in data[1] %}{{ content.date }}{% endfor %}</a>
+						</figure>
 						<h5 class="olp_blog-div-title">{{ data[0] }}</h5>
 						<p class="olp_blog-div-text">{% for content in data[1] %}{{ content.summary }}{% endfor %}</p>
 					{% endfor %}</div></li>{% endfor %}
