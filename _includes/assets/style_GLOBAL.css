@@ -535,6 +535,7 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	}
 	
 	/*** .olp_highlight ***/
+	.olp_highlight-div-video { min-height: 15em !important; }
 /*** END PAGES: OLYMPIAD ***/
 
 /*** INTERACTIVITY ***/

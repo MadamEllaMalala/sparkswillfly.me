@@ -4,9 +4,12 @@
 				
 				<ul class="olp_highlight-list">{% for file in site.data.olp_highlight %}
 					<li class="olp_highlight-list-item"><div class="olp_highlight-div">{% for data in file %}
+						<iframe class="olp_highlight-div-video" width="560" height="315" src="https://www.youtube.com/embed/{{ data[0] }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<!--
 						<video class="olp_highlight-div-video" controls preload="none" loading="lazy">
 							<source src="/assets/videos/{{ data[0] }}" type="video/mp4" />
 						</video>
+						-->
 						<h5 class="olp_highlight-div-title">{{ data[1] }}</h5>
 					{% endfor %}</div></li>{% endfor %}
 				</ul>{% if page.slug != "olympiad" %}
