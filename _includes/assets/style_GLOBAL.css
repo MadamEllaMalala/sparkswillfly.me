@@ -149,11 +149,11 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 /*** END FONTS ***/
 
 /*** MEDIA ***/
-.banner { background-image: url("/assets/images/banner.jpg"); }
+.banner { background-image: url("/assets/images/banner.png"); }
 .banner {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom;
 }
 
 .header-aside-div:nth-child(1):before { background-image: url("/assets/images/icon_email_white.png"); }
