@@ -798,6 +798,8 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	}
 
 	/*** PAGE: PROGRAMS ==> .pgms_highlight ***/
+	.pgms_highlight-list-item { flex: 1; }
+	
 	.pgms_highlight-list-item:nth-child(1),
 	.pgms_highlight-list-item:nth-child(3) {
 		margin-top: 3em;

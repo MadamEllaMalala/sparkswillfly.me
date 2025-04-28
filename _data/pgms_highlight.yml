@@ -1,12 +1,12 @@
 - "One<span class='d-font'>-</span>on<span class='d-font'>-</span>One Tutoring":
-    - thumbnail: "banner.jpg"
+    - thumbnail: "program_one-on-one-tutoring.png"
     - text: "Personalized homeschooling sessions by experienced teachers, tailored to each student’s needs."
     - link: "/what-we-do/homeschool-tutoring/"
 - "Class Coaching":
-    - thumbnail: "banner.jpg"
+    - thumbnail: "program_class-coaching.png"
     - text: "Students work in teams with our experienced educators, in their everyday school environment."
     - link: "/what-we-do/class-coaching/"
 - "Private Workshops":
-    - thumbnail: "banner.jpg"
+    - thumbnail: "program_private-workshops.png"
     - text: "Get experts craft the curriculum for upskilling your workforce, with an intensive and practical session."
     - link: "/what-we-do/private-workshop/"
