@@ -10,29 +10,29 @@
 					<fieldset class="ctc_registration-form-fieldset">
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">Student’s First Name:</span>
-							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="First Name" />
+							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="First Name" required />
 						</div>
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">Student’s Last Name:</span>
-							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="Last Name" />
+							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="Last Name" required />
 						</div>
 					</fieldset>
 					
 					<fieldset class="ctc_registration-form-fieldset">
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">Grade Level:</span>
-							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="Grade" />
+							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="Grade" required />
 						</div>
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">School Attending:</span>
-							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="School" />
+							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="School" required />
 						</div>
 					</fieldset>
 					
 					<fieldset class="ctc_registration-form-fieldset">
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">Program of Interest:</span>
-							<select class="ctc_registration-form-fieldset-box-select u-select" name="Program">
+							<select class="ctc_registration-form-fieldset-box-select u-select" name="Program" required>
 								<option>Class Coaching: R999</option>
 								<option>Class Coaching Demo: Free</option>
 								<option>Homeschool Tutoring: R999</option>
@@ -41,7 +41,7 @@
 						</div>
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">Skill Level:</span>
-							<select class="ctc_registration-form-fieldset-box-select u-select" name="Skills">
+							<select class="ctc_registration-form-fieldset-box-select u-select" name="Skills" required>
 								<option>Pro</option>
 								<option>Intermediate</option>
 								<option>Beginner</option>
@@ -52,11 +52,11 @@
 					<fieldset class="ctc_registration-form-fieldset">
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">Parent<span class="d-font">/</span>Guardian’s Name:</span>
-							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="Parent" />
+							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="Parent" required />
 						</div>
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">Parent<span class="d-font">/</span>Guardian’s Phone Number:</span>
-							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="Phone" />
+							<input type="text" class="ctc_registration-form-fieldset-box-input u-input" name="Phone" required />
 						</div>
 					</fieldset>
 					
@@ -64,6 +64,18 @@
 						<div class="ctc_registration-form-fieldset-box">
 							<span class="ctc_registration-form-fieldset-box-label u-input-label">Additional Details:</span>
 							<textarea class="ctc_registration-form-fieldset-box-textarea u-textarea" name="Notes"></textarea>
+						</div>
+					</fieldset>
+					
+					<fieldset class="ctc_registration-form-fieldset">
+						<div class="ctc_registration-form-fieldset-box">
+							<span class="ctc_registration-form-fieldset-box-label u-input-label">Do you give us consent to take pictures with your child?</span>
+							
+							<input type="radio" id="rdbConsentYES" class="ctc_registration-form-fieldset-box" name="rdbConsent" required />
+							<label for="rdbConsentYES">YES, for the yearbook or any other relevant medium at ’Sparks Will Fly.’</label>
+							<br />
+							<input type="radio" id="rdbConsentNO" class="ctc_registration-form-fieldset-box" name="rdbConsent" required />
+							<label for="rdbConsentNO">NO, only send me my child’s photos privately.</label>
 						</div>
 					</fieldset>
 				
