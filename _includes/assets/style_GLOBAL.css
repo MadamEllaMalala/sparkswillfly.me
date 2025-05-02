@@ -410,6 +410,9 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 		position: absolute; top: 0; right: 0;
 		width: 3em; height: 100%;
 	}
+	.testimonials-blockquote-cite-stars img {
+		width: auto; height: 1em;
+	}
 	.testimonials-list-item {
 		padding: 1.9em;
 	}
@@ -868,3 +871,7 @@ html[attr-page="programs"] .header-nav-item:nth-child(3) .header-nav-item-a,
 	background-repeat: no-repeat;
 }
 /*** END SANDBOX ***/
+
+/*** TO-DELETE ***/
+.abt_gallery-sampleZoom { display: none !important; }
+/*** END TO-DELETE ***/
